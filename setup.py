@@ -5,11 +5,10 @@ from os.path import join, dirname
 
 from coalesce import __version__
 
-
 setup(
-    name='Coalesce',
+    name='coalesce',
     version=__version__,
-    long_description=open(join(dirname(__file__), 'README.md')).read(),
+    long_description=open(join(dirname(__file__), 'README.txt')).read(),
     description='simple Python library with coalesce function and "magic" empty value',
     author='Alexander Bryazgin',
     author_email='bryazgin64@gmail.com',
