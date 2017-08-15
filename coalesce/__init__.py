@@ -1,4 +1,4 @@
-__version__ = '0.2'
+__version__ = '0.3'
 
 
 class UniqueValue(object):
@@ -14,6 +14,9 @@ class UniqueValue(object):
         if self.truthful is None:
             raise TypeError('UniqueValue is not declared as truthful or falsely')
         return self.truthful
+
+    def __bool__(self):
+        return self.__nonzero__()
 
 
 """
